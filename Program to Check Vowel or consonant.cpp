@@ -1,26 +1,20 @@
-#include<iostream>
-using namespace std;
+#include <stdio.h>
+int main() {
+    char c;
+    int lowercase, uppercase;
+    printf("Enter an alphabet: ");
+    scanf("%c", &c);
 
-int main()
-{
-    int num1,num2,num3;
+    
+    lowercase = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
 
-    cout<<"enter three numbers: ";
-    cin>>num1>>num2>>num3;
+   
+    uppercase = (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
 
-    if(num1>num2 && num1>num3)
-    {
-        cout>>num1;
-    }
-    else if(num2>num1 && num2>num3)
-    {
-        cout>>num2;
-    }
-
+    
+    if (lowercase || uppercase)
+        printf("%c is a vowel.", c);
     else
-    {
-        cout>>num3;
-    }
-    
-    
+        printf("%c is a consonant.", c);
+    return 0;
 }

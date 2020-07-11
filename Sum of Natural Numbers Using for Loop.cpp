@@ -1,20 +1,14 @@
-#include<iostream>
-using namespace std;
+#include <stdio.h>
+int main() {
+    int n, i, sum = 0;
 
-int main()
-{
-    int num;
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);
 
-    cout<<"enter the number ";
-    cin>>num;
-
-    int i;
-    int sum=0;
-
-    for(i=1;i<=num;i++)
-    {
-       sum+=i; 
+    for (i = 1; i <= n; ++i) {
+        sum += i;
     }
 
-    cout<<"Sum is: "<<sum;
+    printf("Sum = %d", sum);
+    return 0;
 }

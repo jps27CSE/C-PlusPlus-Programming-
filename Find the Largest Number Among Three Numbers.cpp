@@ -3,28 +3,24 @@ using namespace std;
 
 int main()
 {
-    int number;
+    int num1,num2,num3;
 
-    cout<<"Enter a year";
-    cin>>number;
+    cout<<"enter three numbers: ";
+    cin>>num1>>num2>>num3;
 
-    if(number%400==0)
+    if(num1>num2 && num1>num3)
     {
-        cout<<"Leap year";
+        cout<<num1;
     }
-    else if(number%100==0)
+    else if(num2>num1 && num2>num3)
     {
-        cout<<"Not Leap year";
+        cout<<num2;
     }
-    else if(number%4==0)
-    {
-        cout<<"Leap year";
-    }
+
     else
     {
-        cout<<"Not leap year";
+        cout<<num3;
     }
-    
     
     
 }

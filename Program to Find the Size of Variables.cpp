@@ -1,29 +1,15 @@
-#include<iostream>
-using namespace std;
+#include<stdio.h>
+int main() {
+    int intType;
+    float floatType;
+    double doubleType;
+    char charType;
 
-int main()
-{
-    int number1;
-    int number2;
-
-    int temp;
-
-    cout<<"enter first number: ";
-    cin>>number1;
-
-    cout<<"enter second number: ";
-    cin>>number2;
-
-    cout<<"before Swapping"<<endl;
-    cout<<number1<<endl;
-    cout<<number2<<endl;
-
-
-    temp=number1;
-    number1=number2;
-    number2=temp;
-
-    cout<<"after Swapping"<<endl;
-    cout<<number1<<endl;
-    cout<<number2<<endl;
+   
+    printf("Size of int: %ld bytes\n", sizeof(intType));
+    printf("Size of float: %ld bytes\n", sizeof(floatType));
+    printf("Size of double: %ld bytes\n", sizeof(doubleType));
+    printf("Size of char: %ld byte\n", sizeof(charType));
+    
+    return 0;
 }

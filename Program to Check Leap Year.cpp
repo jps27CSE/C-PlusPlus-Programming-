@@ -3,23 +3,28 @@ using namespace std;
 
 int main()
 {
-    double number;
+    int number;
 
-    cout<<"Enter a number";
+    cout<<"Enter a year";
     cin>>number;
 
-    if(number<0)
+    if(number%400==0)
     {
-        cout<<"Number is negative";
+        cout<<"Leap year";
     }
-    else if(number>0)
+    else if(number%100==0)
     {
-        cout<<"Number is positive";
+        cout<<"Not Leap year";
+    }
+    else if(number%4==0)
+    {
+        cout<<"Leap year";
     }
     else
     {
-        cout<<"you entered zero";
+        cout<<"Not leap year";
     }
+    
     
     
 }
