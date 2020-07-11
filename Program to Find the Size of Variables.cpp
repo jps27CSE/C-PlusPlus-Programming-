@@ -1,4 +1,5 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 int main() {
     int intType;
     float floatType;
@@ -6,10 +7,10 @@ int main() {
     char charType;
 
    
-    printf("Size of int: %ld bytes\n", sizeof(intType));
-    printf("Size of float: %ld bytes\n", sizeof(floatType));
-    printf("Size of double: %ld bytes\n", sizeof(doubleType));
-    printf("Size of char: %ld byte\n", sizeof(charType));
+    cout<<"Size of int: %ld bytes\n", sizeof(intType);
+     cout<<"Size of float: %ld bytes\n", sizeof(floatType);
+     cout<<"Size of double: %ld bytes\n", sizeof(doubleType);
+     cout<<"Size of char: %ld byte\n", sizeof(charType);
     
     return 0;
 }

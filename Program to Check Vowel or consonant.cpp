@@ -1,9 +1,10 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 int main() {
     char c;
     int lowercase, uppercase;
-    printf("Enter an alphabet: ");
-    scanf("%c", &c);
+    cout<<"Enter an alphabet: ";
+    cin>>c;
 
     
     lowercase = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
@@ -13,8 +14,8 @@ int main() {
 
     
     if (lowercase || uppercase)
-        printf("%c is a vowel.", c);
+        cout<<"%c is a vowel."<<c;
     else
-        printf("%c is a consonant.", c);
+        cout<<"%c is a consonant."<<c;
     return 0;
 }
