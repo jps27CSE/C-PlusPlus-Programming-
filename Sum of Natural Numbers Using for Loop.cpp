@@ -1,15 +1,20 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-int main() {
-    int n, i, sum = 0;
 
-    cout<<"Enter a positive integer: ";
-    cin>>n;
+int main()
+{
+    int num;
 
-    for (i = 1; i <= n; ++i) {
-        sum += i;
+    cout<<"enter the number ";
+    cin>>num;
+
+    int i;
+    int sum=0;
+
+    for(i=1;i<=num;i++)
+    {
+       sum+=i; 
     }
 
-    cout<<"Sum = %d"<<sum;
-    return 0;
+    cout<<"Sum is: "<<sum;
 }
