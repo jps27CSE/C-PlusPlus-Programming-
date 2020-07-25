@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1595670261 source:d:\my project\c++ programming\object oriented programming\project\firstclass.cpp
+	"firstclass.h"
+	<iostream>
+
+1595670264 d:\my project\c++ programming\object oriented programming\project\firstclass.h
+
