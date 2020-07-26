@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1595757066 source:d:\my project\c++ programming\object oriented programming\constant objects\myclass.cpp
+	"myclass.h"
+	<iostream>
+
+1595756835 d:\my project\c++ programming\object oriented programming\constant objects\myclass.h
+
