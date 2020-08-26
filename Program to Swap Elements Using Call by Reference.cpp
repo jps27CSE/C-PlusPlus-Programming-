@@ -1,35 +1,24 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-void function(int *a,int *b,int *c)
+void swap(int *num1,int *num2,int *num3)
 {
     int temp;
 
-    temp=*b;
-    *b=*a;
-    *a=*c;
-    *c=temp;
-
+    temp=*num2;
+    *num2=*num1;
+    *num1=*num3;
+    *num3=temp;
 }
+
 
 int main()
 {
     int a,b,c;
 
-    cout<<"Enter Number 1:";
-    cin>>a;
+    cin>>a>>b>>c;
 
-    cout<<"Enter Number 2:";
-    cin>>b;
+    swap(&a,&b,&c);
 
-    cout<<"Enter Number 3:";
-    cin>>c;
-
-    function(&a,&b,&c);
-
-    cout<<a<<b<<c;
-
-
-
-
+    cout<<a<<endl<<b<<endl<<c<<endl;
 }
