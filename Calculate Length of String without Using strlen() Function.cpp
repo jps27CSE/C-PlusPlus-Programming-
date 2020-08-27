@@ -1,13 +1,14 @@
-#include<iostream>
+#include <iostream>
+#include <cstring>
 using namespace std;
 
 int main()
 {
-    char ch[]="Programming is Fun";
+    char ch[]="Programming is fun";
 
     int i;
 
-    for(i=0;ch[i]!='\0';i++);
-    
-    cout<<i;
+    for(i=0;i<strlen(ch);i++);
+
+    cout<<"Length of string:"<<i; 
 }
